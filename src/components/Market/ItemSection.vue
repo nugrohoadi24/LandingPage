@@ -8,7 +8,7 @@
                     <carousel class="store-slider" :autoplay="true" :items="3" :nav="false" :dots="false" :stagePadding="50">
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/portfolio/01-thumbnail.jpg" alt="" />
+                                <img src="img/gamis1.jpg" alt="" />
                                 <ul>
                                     <li class="w-icon active">
                                         <a href="#"><i class="fas fa-store"></i></a>

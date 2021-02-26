@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "add": "^2.0.6",
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.6.0",
     "core-js": "^3.6.5",
     "or": "^0.2.0",
     "vue": "^2.6.11",
+    "vue-lazyload": "^1.3.3",
     "vue-owl-carousel": "^2.0.3",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2",

@@ -1,10 +1,10 @@
 <template>
     <div>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-white" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container h-100">
             <div class="d-flex justify-content-center h-100">
                 <div class="searchbar">
-                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <input class="search_input" type="text" name="" placeholder="Cari Sesuatu...">
                     <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
                 </div>
              </div>
@@ -34,13 +34,14 @@ export default {
 </script>
 
 <style scoped>
-    .bg-white {
-        color: white;
-        width: 100%;
-        padding: 4rem;
+    #mainNav{
+        background-color: #fff !important;
+        box-shadow: 0 0 9px 3px rgb(50 29 154 / 20%);
     }
 
+
     .searchbar{
+    margin-left: 4rem;
     margin-bottom: auto;
     margin-top: auto;
     height: 50px;
@@ -60,14 +61,14 @@ export default {
     transition: width 0.4s linear;
     }
 
-    .searchbar:hover > .search_input{
+    .searchbar > .search_input{
     padding: 0 10px;
     width: 450px;
     caret-color:#1d519e;
     transition: width 0.4s linear;
     }
 
-    .searchbar:hover > .search_icon{
+    .searchbar > .search_icon{
     background: white;
     color: #1d519e;
     }
@@ -80,7 +81,7 @@ export default {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color:#808080;
+    color:#1d519e;
     text-decoration:none;
     }
 </style>

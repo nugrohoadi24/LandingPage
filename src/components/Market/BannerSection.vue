@@ -2,10 +2,10 @@
     <div>
     <!-- Banner Section -->
     <section class="hero-section jarak">
-        <carousel class="hero-items" :autoplay="true" :items="1" :nav="false" :dots="true">
+        <carousel class="hero-items" :autoplay="true" :items="1" :dots="true" :nav="true" :navText="['<','>']">
             <div class="single-hero-items set-bg" style="background-image: url('img/banner-1.jpg')">
                 <div class="container">
-                    <div class="row">
+                    <div class="row"> 
                         <div class="col-lg-5">
                             <span>Promo</span>
                             <h1>Discount All Items 20%</h1>
@@ -63,6 +63,21 @@ export default {
 
 <style scoped>
 .jarak {
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
+
+
+/* .owl-carousel .fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+} */
+
 </style>

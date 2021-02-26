@@ -5,6 +5,10 @@
 
 /* Custom default CSS */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -65,6 +69,18 @@ active,
 
 .min-h100 {
     min-height: 100%;
+}
+
+#mainNav,
+#mainNavMobile .navbar-nav .dropdown-menu li,
+#mainNavMobile .navbar-nav li.nav-item,
+.owl-carousel button.owl-dot,
+.owl-theme .owl-nav [class*=owl-],
+.store-slider .owl-theme .owl-nav [class*=owl-],
+.theme-button,
+.widget-recent-posts ul li a p:hover,
+a {
+    transition: all .5s ease-in-out !important;
 }
 
 
@@ -303,6 +319,7 @@ button.bg-bottom-shape:focus {
         padding-bottom: 1rem;
         background-color: #fff;
         box-shadow: 0 0 9px 3px rgb(50 29 154 / 20%);
+        padding: 1.3rem;
     }
     #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
@@ -398,32 +415,6 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
     font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-
-/* .masthead-items .owl-item.active .single-masthead-items h1 {
-    color: #1d519e;
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 3.25rem;
-    margin-bottom: 2rem;
-    line-height: 3.25rem;
-    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    -webkit-transition: all 0.4s ease 0.4s;
-    -o-transition: all 0.4s ease 0.4s;
-    transition: all 0.4s ease 0.4s;
-}
-
-.masthehad-items .owl-item.active .single-masthead-items p {
-    -webkit-transition: all 0.6s ease 0.6s;
-    -o-transition: all 0.6s ease 0.6s;
-    transition: all 0.6s ease 0.6s;
-}
-
-.masthead-items .owl-item.active .single-masthead-items .primary-btn {
-    -webkit-transition: all 0.8s ease 0.8s;
-    -o-transition: all 0.8s ease 0.8s;
-    transition: all 0.8s ease 0.8s;
-} */
 
 
 /* Page Section */
@@ -732,6 +723,54 @@ header.masthead .masthead-heading {
     right: 40px;
 }
 
+.hero-items .owl-theme .owl-nav {
+    top: 35%;
+    position: absolute;
+}
+
+.hero-items .owl-theme .owl-nav [class*=owl-] {
+    padding: 9px 18px;
+}
+
+.hero-items .owl-theme .owl-nav [class*=owl-] {
+    color: #1b1b1b;
+    background: #c5c5c5;
+    border-radius: 2rem;
+    opacity: 30%;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.hero-items .owl-theme .owl-nav [class*=owl-]:hover {
+    color: #0a0a0a;
+    background: #fff;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    opacity: 80%;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.hero-items .owl-theme .owl-nav .owl-next {
+    left: 80rem;
+    position: absolute;
+}
+
+.hero-items .owl-theme .owl-nav .owl-prev {
+    left: 1rem;
+    position: absolute;
+}
+
+.hero-items .owl-theme .owl-dots {
+    position: relative;
+    margin-top: -3rem !important;
+}
+
+.hero-items .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #4cbcf3!important;
+    box-shadow: 0 0 0 6px rgb(76 188 243 / 40%);
+}
+
 
 /*  Item Store */
 
@@ -832,7 +871,7 @@ header.masthead .masthead-heading {
 
 .store-slider .owl-dots {
     text-align: left !important;
-    margin-top: 27px !important;
+    margin-left: 5rem;
 }
 
 .store-slider .owl-dots button {
@@ -851,8 +890,25 @@ header.masthead .masthead-heading {
 
 .store-slider .owl-dots button.active {
     width: 30px !important;
-    /* background: #252525 !important; */
     border-radius: 50px !important;
+}
+
+.owl-carousel button.owl-dot {
+    margin: 0 15px;
+}
+
+.owl-theme .owl-dots {
+    margin-top: -60px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    height: 20px;
+    width: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #4cbcf3!important;
+    box-shadow: 0 0 0 6px rgb(76 188 243 / 40%);
 }
 
 .store-item {
@@ -877,16 +933,6 @@ header.masthead .masthead-heading {
     min-width: 100%;
     max-height: 650px;
 }
-
-
-/* .store-item .pi-pic.active.center .item {
-    background-image: url(img/phone.png);
-    background-repeat: no-repeat;
-    background-size: inherit;
-    background-position: 50%;
-    padding: 5px 0;
-    transform: scale(1);
-} */
 
 .store-item .pi-pic .sale {
     color: #ffffff;
@@ -984,6 +1030,38 @@ header.masthead .masthead-heading {
 .store-item .pi-pic ul li.w-icon.active a {
     background: #e7ab3c;
     color: #ffffff;
+}
+
+.store-slider .owl-theme .owl-nav [class*=owl-] {
+    padding: 6px 12px;
+}
+
+.store-slider .owl-theme .owl-dot [class*=owl-] {
+    padding: 12px 18px;
+}
+
+.store-slider .owl-theme .owl-nav [class*=owl-] {
+    color: #fff;
+    background: #4cbcf3;
+    border: 1px solid #4cbcf3;
+    border-radius: 1rem;
+    text-transform: capitalize;
+    opacity: 80%;
+}
+
+.store-slider .owl-theme .owl-nav [class*=owl-]:hover {
+    color: #1d519e;
+    background: #fff;
+    border: 1px solid #4cbcf3;
+    border-radius: 1rem;
+    text-transform: capitalize;
+}
+
+.store-slider .owl-theme .owl-nav {
+    text-align: right;
+    position: absolute;
+    right: 5rem;
+    bottom: -10px;
 }
 
 

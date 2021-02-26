@@ -7,7 +7,7 @@
                 <h2 class="section-heading text-uppercase">Fasilitas</h2>
                 <h3 class="section-subheading text-muted">Catalog punya macem macem fasilitas keren</h3>
             </div>
-            <div class="row text-center">
+            <div class="row text-center" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
