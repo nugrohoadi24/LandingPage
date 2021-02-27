@@ -726,6 +726,7 @@ header.masthead .masthead-heading {
 .hero-items .owl-theme .owl-nav {
     top: 35%;
     position: absolute;
+    width: 100%;
 }
 
 .hero-items .owl-theme .owl-nav [class*=owl-] {
@@ -752,7 +753,7 @@ header.masthead .masthead-heading {
 }
 
 .hero-items .owl-theme .owl-nav .owl-next {
-    left: 80rem;
+    right: 1rem;
     position: absolute;
 }
 
@@ -859,14 +860,12 @@ header.masthead .masthead-heading {
     left: -62px;
     top: 25%;
     color: #171717;
-    opacity: 0.3;
 }
 
 .store-slider .owl-nav button[type=button].owl-next {
     left: auto;
     right: -62px;
     color: #171717;
-    opacity: 1;
 }
 
 .store-slider .owl-dots {

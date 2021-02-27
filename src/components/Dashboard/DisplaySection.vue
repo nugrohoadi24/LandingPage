@@ -13,7 +13,7 @@
             <div class="row" data-aos="zoom-in-up" data-aos-duration="1000">
                 <div class="col-lg-12">
                     <carousel class="store-slider" :autoplay="false" :loop="true" :items="3" :center="true" 
-                    :nav="true" :navText="['<','>']" :dots="true" :responsive="{600:{items:3}}" :lazyLoad="true">
+                    :nav="true" :navText="['<','>']" :dots="true" :responsive="responsive" :lazyLoad="true">
                         <div class="store-item">
                             <div class="pi-pic">
                                 <img src="img/display/ss1.jpg" alt="" />                              
@@ -74,7 +74,25 @@ export default {
     name: 'DisplaySection',
     components: {
         carousel
+    },
+    data(){
+        return {
+            responsive:{
+                0:{
+                    items: 1,
+                    nav: false,
+                    dots: false
+                },
+                1024:{
+                    items: 3,
+                    nav: true,
+                    dots: true
+                }
+            }
+        }
     }
+
+
 }
 </script>
 
@@ -109,8 +127,15 @@ export default {
     transform: scale(0.8);
 }
 .store-slider .owl-item.active.center .store-item {
-    margin: 2% 8%;  
-    padding: 14px 20px 0;
+    margin: 20px 30px;  
+    padding: 14px 20px;
+}
+
+@media (max-width:991.98px) {
+    .store-slider .owl-item.active.center .store-item {
+    margin: 20px 10px !important;  
+    padding: 14px 20px;
+}
 }
 .store-slider .owl-item.active.center .store-item img {
     min-height: 100%;
