@@ -12,53 +12,48 @@
             </div>
             <div class="row" data-aos="zoom-in-up" data-aos-duration="1000">
                 <div class="col-lg-12">
-                    <carousel class="store-slider" :autoplay="false" :loop="true" :items="3" :center="true" 
+                    <carousel class="display-slider" :autoplay="false" :loop="true" :items="3" :center="true" 
                     :nav="true" :navText="['<','>']" :dots="true" :responsive="responsive" :lazyLoad="true">
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/display/ss1.jpg" alt="" />                              
+                                <img src="img/display/display0.jpg" alt="" />                              
                             </div>
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/display/ss2.jpg" alt="" />                              
+                                <img src="img/display/display1.jpg" alt="" />                              
                             </div>
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/display/ss3.jpg" alt="" />                              
+                                <img src="img/display/display2.jpg" alt="" />                              
                             </div>
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/display/ss4.jpg" alt="" />                              
+                                <img src="img/display/display3.jpg" alt="" />                              
                             </div>
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/display/ss5.jpg" alt="" />                              
+                                <img src="img/display/display4.jpg" alt="" />                              
                             </div>
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/display/ss6.jpg" alt="" />                              
+                                <img src="img/display/display5.jpg" alt="" />                              
                             </div>
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/display/ss7.jpg" alt="" />                              
+                                <img src="img/display/display6.jpg" alt="" />                              
                             </div>
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/display/ss8.jpg" alt="" />                              
+                                <img src="img/display/display7.jpg" alt="" />                              
                             </div>
-                        </div>
-                        <div class="store-item">
-                            <div class="pi-pic">
-                                <img src="img/display/ss9.jpg" alt="" />                             
-                            </div>
-                        </div>               
+                        </div>            
                     </carousel>
                 </div>
             </div>
@@ -81,7 +76,7 @@ export default {
                 0:{
                     items: 1,
                     nav: false,
-                    dots: false
+                    dots: true
                 },
                 1024:{
                     items: 3,
@@ -104,10 +99,8 @@ export default {
     margin-right: 40px;
     margin-left: 40px;
 }
-.store-slider .owl-item .store-item{
-    transform: scale(.6)
-}
-.store-slider .owl-carousel .owl-stage-outer {
+
+.display-slider .owl-carousel .owl-stage-outer {
     margin-left: -23rem !important;
 }
 .store-item .pi-pic img {
@@ -117,30 +110,16 @@ export default {
     border-radius: 20px;
     vertical-align: middle;
 }
-.store-slider .owl-item.active.center .store-item {
+.display-slider .owl-item.active.center .store-item {
     background-image: url("../../../public/img/phone1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
-    padding: 5px 0;
-    height: 600px;
-    transform: scale(0.8);
-}
-.store-slider .owl-item.active.center .store-item {
-    margin: 20px 30px;  
-    padding: 14px 20px;
 }
 
-@media (max-width:991.98px) {
-    .store-slider .owl-item.active.center .store-item {
-    margin: 20px 10px !important;  
-    padding: 14px 20px;
-}
-}
-.store-slider .owl-item.active.center .store-item img {
+.display-slider .owl-item.active.center .store-item img {
     min-height: 100%;
     max-height: 100%;
-    height: 570px;
     border: none;
     border-top-right-radius: 1;
     border-top-left-radius: 1;

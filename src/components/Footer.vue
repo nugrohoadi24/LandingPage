@@ -4,8 +4,8 @@
     <footer class="footer py-4">
         <div class="container">
             <div class="row">
-                <div class="text-center">
-                  Copyright © 2021 All Right Reserved | Catalog
+                <div class="col-lg-12">
+                  Copyright © 2021 | PT Shopia Teknologi All Rights Reserved
                 </div>
             </div>
         </div>

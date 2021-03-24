@@ -3,46 +3,28 @@
     <!-- Banner Section -->
     <section class="hero-section jarak">
         <carousel class="hero-items" :autoplay="true" :items="1" :dots="true" :nav="true" :navText="['<','>']">
-            <div class="single-hero-items set-bg" style="background-image: url('img/banner-1.jpg')">
-                <div class="container">
-                    <div class="row"> 
-                        <div class="col-lg-5">
-                            <span>Promo</span>
-                            <h1>Discount All Items 20%</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            </p>
-                            <a href="#" class="primary-btn">Kunjungi Toko</a>
-                        </div>
-                    </div>
+            <div class="single-hero-items set-bg">
+                <div v-if="mobile" class="banner-item single-item">
+                    <img src="img/banner-11.jpg">
+                </div>
+                <div v-else class="banner-item single-item">
+                    <img src="img/banner-1.jpg">
+                </div>     
+            </div>
+            <div class="single-hero-items set-bg">
+                <div v-if="mobile" class="store-item single-item">
+                    <img src="img/banner-22.jpg">
+                </div>
+                <div v-else class="store-item single-item">
+                    <img src="img/banner-2.jpg">
                 </div>
             </div>
-            <div class="single-hero-items set-bg" style="background-image: url('img/banner-2.jpg')">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <span>Promo</span>
-                            <h1>Discount All Items 20%</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            </p>
-                            <a href="#" class="primary-btn">Kunjungi Toko</a>
-                        </div>
-                    </div>
+            <div class="single-hero-items set-bg">
+                <div v-if="mobile" class="store-item single-item">
+                    <img src="img/banner-33.jpg">
                 </div>
-            </div>
-            <div class="single-hero-items set-bg" style="background-image: url('img/banner-3.jpg')">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <span>Promo</span>
-                            <h1>Discount All Items 20%</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            </p>
-                            <a href="#" class="primary-btn">Kunjungi Toko</a>
-                        </div>
-                    </div>
+                <div v-else class="store-item single-item">
+                    <img src="img/banner-3.jpg">
                 </div>
             </div>
         </carousel>
@@ -53,31 +35,24 @@
 
 <script>
 import carousel from 'vue-owl-carousel'
+import mobileImage from '../mobileImage'
 export default {
     name: 'BannerSection',
     components: {
         carousel    
+    },
+    data() {
+        return{
+            mobile: false
+        }
+    },
+    mounted() {
+        this.mobile = mobileImage.isMobile()
     }
 }
+
 </script>
 
 <style scoped>
-.jarak {
-    margin-top: 5rem;
-}
-
-
-/* .owl-carousel .fadeIn {
-    animation-name: fadeIn;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-} */
 
 </style>

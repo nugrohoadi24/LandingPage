@@ -5,10 +5,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 mt-5">
-                    <carousel class="store-slider" :autoplay="true" :items="3" :nav="false" :dots="false" :stagePadding="50">
-                        <div class="store-item">
+                    <div class="market-section">
+                        <h2 class="section-heading text-capitalize">Produk Pilihan</h2>
+                    </div>
+                    <carousel class="store-slider" :autoplay="false" :items="3" :nav="false" :dots="false" :responsive="responsive" :stagePadding="50">
+                        <div class="store-item single-item">
                             <div class="pi-pic">
-                                <img src="img/gamis1.jpg" alt="" />
+                                <img src="img/store-travel.jpg" alt="" />
                                 <ul>
                                     <li class="w-icon active">
                                         <a href="#"><i class="fas fa-store"></i></a>
@@ -28,7 +31,7 @@
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/gamis2.jpg" alt="" />
+                                <img src="img/store-mask.jpg" alt="" />
                                 <ul>
                                     <li class="w-icon active">
                                         <a href="#"><i class="fas fa-store"></i></a>
@@ -48,7 +51,7 @@
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/gamis3.jpg" alt="" />
+                                <img src="img/store-food.jpg" alt="" />
                                 <ul>
                                     <li class="w-icon active">
                                         <a href="#"><i class="fas fa-store"></i></a>
@@ -68,7 +71,7 @@
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/gamis4.jpg" alt="" />
+                                <img src="img/store-hijab.jpg" alt="" />
                                 <ul>
                                     <li class="w-icon active">
                                         <a href="#"><i class="fas fa-store"></i></a>
@@ -88,7 +91,7 @@
                         </div>
                         <div class="store-item">
                             <div class="pi-pic">
-                                <img src="img/gamis5.jpg" alt="" />
+                                <img src="img/store-outdoor.jpg" alt="" />
                                 <ul>
                                     <li class="w-icon active">
                                         <a href="#"><i class="fas fa-store"></i></a>
@@ -121,6 +124,23 @@ export default {
     name: 'ItemSection',
     components: {
         carousel
+    },
+    data(){
+        return {
+            responsive:{
+                0:{
+                    items: 1,
+                    nav: false,
+                    dots: false,
+                    stagePadding: 10,
+                },
+                1024:{
+                    items: 3,
+                    nav: false,
+                    dots: false
+                }
+            }
+        }
     }
 }
 </script>

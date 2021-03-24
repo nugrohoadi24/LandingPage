@@ -8,64 +8,64 @@
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Buat Toko Online</h2>
-                <h3 class="section-subheading text-muted">Sangat mudah untuk membuat toko online di Catalog</h3>
+                <h3 class="section-subheading text-muted">Sangat mudah untuk membuat toko online di Shopia</h3>
             </div>
             <div class="row text-left">
-                <div class="col-lg-6 my-3" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-4 my-3" >
                     <div class="text-center">
-                        <img class="img-phone" src='img/phone.png' alt="" />
+                        <img class="img-phone" src='img/daftar-shopia.png' alt="" />
                     </div>
                 </div>
-                <div class="col-lg-6 my-3" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-6 my-3" data-aos="fade-up" data-aos-duration="1000">
                     <div class="min-h100 d-flex flex-center">
                         <div>
                             <h4 class="section-heading-step">Langkah 1</h4>
-                            <h4 class="section-subheading-step">Membuat Toko Online Kamu</h4>
+                            <h4 class="section-subheading-step">Membuat Toko Online</h4>
                             <div class="my-3">
-                                <p class="text-muted">Buat Toko Online kamu dengan mengisi nama toko, kategori toko, deskripsi toko, alamat dan nomor WhatsApp.</p>
+                                <p class="text-muted">Buat Toko Online kamu dengan mengisi nomor WhatsApp, kemudian lengkapi detail tokomu seperti logo, nama, kategori, alamat dan deskripsi toko.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row text-left">
-                <div class="col-lg-6 my-3" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-6 my-3" data-aos="fade-up" data-aos-duration="1000">
                     <div class="min-h100 d-flex flex-center">
                         <div>
                             <h4 class="section-heading-step">Langkah 2</h4>
                             <h4 class="section-subheading-step">Tambahkan Produk Kamu</h4>
                             <div class="my-3">
-                                <p class="text-muted">Buat katalog jualan kamu, atur harga dan pengiriman yang semuanya dilakukan dengan mudah.</p>
+                                <p class="text-muted">Buat katalog produk kamu, tambahkan foto, harga, spesifikasi dan deskripsi, bisa juga menambahkan promo pada produk kamu. Pokoknya semuanya dilakukan dengan mudah.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 my-3" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-4 my-3 order-first order-sm-last" >
                     <div class="text-center">
-                        <img class="img-phone" src='img/phone.png' alt="" />
+                        <img class="img-phone" src='img/produk-shopia.png' alt="" />
                     </div>
                 </div>
             </div>
             <div class="row text-left">
-                <div class="col-lg-6 my-3" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-md-4 my-3" >
                     <div class="text-center">
-                        <img class="img-phone" src='img/phone.png' alt="" />
+                        <img class="img-phone" src='img/share-shopia.png' alt="" />
                     </div>
                 </div>
-                <div class="col-lg-6 my-3" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-6 my-3" data-aos="fade-up" data-aos-duration="1000">
                     <div class="min-h100 d-flex flex-center">
                         <div>
                             <h4 class="section-heading-step">Langkah 3</h4>
                             <h4 class="section-subheading-step">Berjualan di Sosial Media</h4>
                             <div class="my-3">
-                                <p class="text-muted">Bagikan link toko atau produk kamu ke sosial media, kamu bisa berjualan sambil rebahan dan dapatkan penghasilan usahamu.</p>
+                                <p class="text-muted">Sekarang toko online kamu sudah siap, bagikan link toko atau produk kamu ke sosial media, kamu bisa berjualan sambil rebahan dan dapatkan penghasilan usahamu.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="background-shape-x position-absolute">
+        <div class="background-shape-x position-absolute shepe-x">
             <img src="img/ornament2.png" alt="">
         </div>
     </section>
@@ -84,9 +84,10 @@ export default {
 <style scoped>
 .position-absolute {
     position: absolute !important;
+    overflow: hidden;
 }
 .background-shape-x {
-    right: 2%;
+    right: 4%;
     margin-top: -35rem;
     -webkit-animation-name: flyingX;
     animation-name: flyingX;
@@ -103,7 +104,7 @@ export default {
 
 .background-shape-y {
     left: 2%;
-    margin-top: 35rem;
+    margin-top: 38rem;
     -webkit-animation-name: flyingY;
     animation-name: flyingY;
     -webkit-animation-duration: 2s;

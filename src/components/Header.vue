@@ -1,18 +1,21 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" :class="{'navbar-shrink': !showNavbar }" id="mainNav">
-        <div class="container">
-            <router-link class="navbar-brand js-scroll-trigger" :to="'/'"> <img src="assets/img/navbar-logo.svg" alt="" /></router-link>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                <i class="fas fa-bars ml-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="container h-100">
+            <div class="d-flex h-100 w-100 f-center">
+            <router-link class="navbar-brand js-scroll-trigger" :to="'/'"> <img src="../assets/shopia-logo.png" alt="shopia-logo"></router-link>
+                <div class="ml-auto">
+                    <b-button v-b-toggle.navbarResponsive class="navbar-toggler btn-secondary navbar-toggler-right" type="button">
+                        <i class="fas fa-bars menu-size"></i>
+                    </b-button>
+                </div>  
+            </div>
+            <b-collapse id="navbarResponsive" class="collapse navbar-collapse">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item"><router-link class="nav-link js-scroll-trigger" :to="'/'">Home</router-link></li>
                     <li class="nav-item"><router-link class="nav-link js-scroll-trigger" :to="'/market'">Market</router-link></li>
                 </ul>
-            </div>
+            </b-collapse>
         </div>
     </nav>
   </div>
@@ -45,8 +48,6 @@ export default {
 }
 </script>
 
-<style>
-.show{
-    background: #fff;
-}
+<style scoped>
+
 </style>
