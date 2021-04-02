@@ -16,7 +16,7 @@
                                 <a href="https://play.google.com/store/apps">
                                     <a class="btn btn-primary btn-xl js-scroll-trigger btnheader mr-3 btn-width">Download</a>
                                 </a>
-                                <router-link to="/market"><a class="btn btn-secondary btn-xl js-scroll-trigger btnheader btn-width">Lihat Contoh</a></router-link>
+                                <router-link to="/market"><a class="btn btn-purple btn-xl js-scroll-trigger btnheader btn-width clr-white">Lihat Contoh</a></router-link>
                             </div>
                         </div>
                     </div>

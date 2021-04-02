@@ -48,6 +48,10 @@ p {
     line-height: 1.75 !important;
 }
 
+.clr-white {
+    color: #fff !important;
+}
+
 .tooltip {
     font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -57,7 +61,7 @@ p {
 }
 
 active,
-.show>.btn-secondary.dropdown-toggle {
+.show>.btn-purple.dropdown-toggle {
     color: #fff;
     background-color: #545b62;
     border-color: #4e555b;
@@ -227,53 +231,53 @@ img::-moz-selection {
     border-color: transparent !important;
 }
 
-.btn-secondary {
+.btn-purple {
     color: #fff;
     background: linear-gradient(150deg, #A66FE5, #b697da) !important;
     box-shadow: -2px 12px 20px -5px rgb(166 111 229 / 80%) !important;
     border-color: transparent !important;
 }
 
-.btn-secondary:hover {
+.btn-purple:hover {
     color: #fff;
     background: linear-gradient(150deg, #b697da, #A66FE5) !important;
     border-color: #b697da !important;
     border-color: transparent !important;
 }
 
-.btn-secondary:focus,
-.btn-secondary.focus {
+.btn-purple:focus,
+.btn-purple.focus {
     color: #fff;
     background: linear-gradient(150deg, #A66FE5, #b697da) !important;
     box-shadow: 0px 0px 30px 1px rgb(166 111 229 / 80%) !important;
     border-color: transparent !important;
 }
 
-.btn-secondary.disabled,
-.btn-secondary:disabled {
+.btn-purple.disabled,
+.btn-purple:disabled {
     color: #fff;
     background-color: linear-gradient(150deg, #A66FE5, #b697da) !important;
     border-color: transparent !important;
 }
 
-.btn-secondary:not(:disabled):not(.disabled):active,
-.btn-secondary:not(:disabled):not(.disabled).active,
-.show>.btn-secondary.dropdown-toggle {
+.btn-purple:not(:disabled):not(.disabled):active,
+.btn-purple:not(:disabled):not(.disabled).active,
+.show>.btn-purple.dropdown-toggle {
     color: #fff;
     background-color: linear-gradient(150deg, #A66FE5, #b697da) !important;
     border-color: transparent !important;
 }
 
-.btn-secondary:not(:disabled):not(.disabled):active:focus,
-.btn-secondary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-secondary.dropdown-toggle:focus {
+.btn-purple:not(:disabled):not(.disabled):active:focus,
+.btn-purple:not(:disabled):not(.disabled).active:focus,
+.show>.btn-purple.dropdown-toggle:focus {
     box-shadow: 0px 0px 30px 1px rgb(166 111 229 / 80%) !important;
     border-color: transparent !important;
 }
 
-.btn-secondary:not(:disabled):not(.disabled):active:focus,
-.btn-secondary:not(:disabled):not(.disabled).active:focus,
-.show>.btn-secondary.dropdown-toggle:focus {
+.btn-purple:not(:disabled):not(.disabled):active:focus,
+.btn-purple:not(:disabled):not(.disabled).active:focus,
+.show>.btn-purple.dropdown-toggle:focus {
     box-shadow: 0px 0px 30px 1px rgb(166 111 229 / 80%) !important;
     border-color: transparent !important;
 }
@@ -333,7 +337,7 @@ button.bg-bottom-shape:focus {
     font-size: 0.75rem;
     color: #fff;
     text-transform: uppercase;
-    background-color: #37c602;
+    background-color: #A66FE5;
     border: 0;
 }
 

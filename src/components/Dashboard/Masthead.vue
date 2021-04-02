@@ -14,7 +14,7 @@
                     <div class="masthead-subheading">Cobain pake Shopia, gak pake lama bisa langsung jualan, promosi juga bisa sambil rebahan, plus bisa berbagi ke semua sosial media kamu.<br>Mau coba jualan sekarang ? GRATIS!</div>
                     <div class="middle">
                         <a class="btn btn-primary btn-xl js-scroll-trigger btnheader mr-3 btn-width" href="#download">Coba Sekarang</a>
-                        <router-link to="/market"><a class="btn btn-secondary btn-xl js-scroll-trigger btnheader btn-width">Lihat Toko</a></router-link>
+                        <router-link to="/market"><a class="btn btn-purple btn-xl js-scroll-trigger btnheader btn-width clr-white">Lihat Toko</a></router-link>
                     </div>
                 </div>
             </div>
